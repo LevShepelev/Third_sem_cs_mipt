@@ -1,0 +1,1 @@
+strace -f bash -c ‘/bin/echo foo | grep bar’
