@@ -9,12 +9,20 @@
 
 int main(int argc, char** argv)
     {
-    int file_destination = open(argv[1], O_WRONLY | O_CREAT );
-    if (file_destination == -1)
-        exit(-1);
-    printf("fuck2\n");
-    dup2(file_destination, STDOUT_FILENO);
-    printf("fuck\n");
-    execvp(argv[2], (argv + 2));
-    perror("execvp");
+    char* arr[4] = {"grep", "A", NULL};
+    int wstatus = 0;
+    
+    int fork_code = fork();
+    if (fork_code == 0)
+        {
+        printf("%s, %s, %s\n", arr[0], arr[1], arr[2]);
+        for (int i = 0; arr[i] != NULL; i++)
+            {
+            printf("%s\n", arr[i]);
+            }
+        execvp("grep", arr);
+        }
+    sleep(2);
+    waitpid(fork_code,  &wstatus, 0);
+    printf("done\n");
     }

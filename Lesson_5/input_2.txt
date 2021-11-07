@@ -1,1 +1,1 @@
-ls -la / | grep s -A 5 -B 4 | grep b 
+ls -la | grep A 
