@@ -1,0 +1,707 @@
+n_process = before attach 0 pid = 48337
+top_part = 0, top = 23
+popped 48335 time 0
+top_part = 0, top = 24
+popped 48333 time 1
+top_part = 0, top = 23
+popped 48335 time 2
+top_part = 0, top = 23
+popped 48335 time 3
+top_part = 0, top = 22
+popped 48335 time 4
+top_part = 0, top = 19
+popped 48333 time 5
+top_part = 0, top = 17
+popped 48335 time 6
+top_part = 0, top = 16
+popped 48333 time 7
+top_part = 0, top = 17
+popped 48336 time 8
+top_part = 0, top = 17
+popped 48338 time 9
+n_process = before detach 6 pid = 48337
+n_process = before attach 3 pid = 48339
+top_part = 0, top = 23
+popped 48339 time 0
+top_part = 0, top = 22
+popped 48336 time 1
+top_part = 0, top = 24
+popped 48336 time 2
+top_part = 0, top = 24
+popped 48336 time 3
+top_part = 0, top = 24
+popped 48338 time 4
+top_part = 0, top = 24
+popped 48338 time 5
+top_part = 0, top = 24
+popped 48336 time 6
+top_part = 0, top = 23
+popped 48338 time 7
+top_part = 0, top = 21
+popped 48339 time 8
+top_part = 0, top = 18
+popped 48338 time 9
+n_process = before detach 5 pid = 48339
+n_process = before attach 4 pid = 48336
+top_part = 0, top = 24
+popped 48338 time 0
+top_part = 0, top = 24
+popped 48338 time 1
+top_part = 0, top = 23
+popped 48338 time 2
+top_part = 0, top = 22
+popped 48339 time 3
+top_part = 0, top = 18
+popped 48339 time 4
+top_part = 0, top = 15
+popped 48337 time 5
+top_part = 0, top = 13
+popped 48333 time 6
+top_part = 0, top = 11
+popped 48337 time 7
+top_part = 0, top = 9
+popped 48335 time 8
+top_part = 0, top = 7
+popped 48333 time 9
+n_process = before detach 4 pid = 48336
+n_process = before attach 5 pid = 48338
+top_part = 0, top = 22
+popped 48336 time 0
+top_part = 0, top = 19
+popped 48339 time 1
+top_part = 0, top = 16
+popped 48339 time 2
+top_part = 0, top = 14
+popped 48335 time 3
+top_part = 0, top = 12
+popped 48337 time 4
+top_part = 0, top = 10
+popped 48333 time 5
+top_part = 0, top = 8
+popped 48337 time 6
+top_part = 0, top = 6
+popped 48337 time 7
+top_part = 0, top = 5
+popped 48333 time 8
+top_part = 0, top = 4
+popped 48337 time 9
+n_process = before detach 3 pid = 48338
+n_process = before attach 3 pid = 48352
+top_part = 0, top = 13
+popped 48352 time 0
+top_part = 0, top = 12
+popped 48352 time 1
+top_part = 0, top = 11
+popped 48352 time 2
+top_part = 0, top = 10
+popped 48352 time 3
+top_part = 0, top = 9
+popped 48352 time 4
+top_part = 0, top = 8
+popped 48352 time 5
+top_part = 0, top = 7
+popped 48352 time 6
+top_part = 0, top = 6
+popped 48352 time 7
+top_part = 0, top = 5
+popped 48352 time 8
+top_part = 0, top = 4
+popped 48352 time 9
+n_process = before detach 3 pid = 48352
+n_process = before attach 0 pid = 48335
+top_part = 0, top = 20
+popped 48335 time 0
+top_part = 0, top = 18
+popped 48339 time 1
+top_part = 0, top = 18
+popped 48336 time 2
+top_part = 0, top = 18
+popped 48338 time 3
+top_part = 0, top = 17
+popped 48336 time 4
+top_part = 0, top = 18
+popped 48338 time 5
+top_part = 0, top = 17
+popped 48336 time 6
+top_part = 0, top = 8
+popped 48348 time 7
+top_part = 0, top = 9
+popped 48348 time 8
+top_part = 0, top = 9
+popped 48348 time 9
+n_process = before detach 3 pid = 48335
+n_process = before attach 2 pid = 48348
+top_part = 0, top = 10
+popped 48348 time 0
+top_part = 0, top = 9
+popped 48348 time 1
+top_part = 0, top = 8
+popped 48348 time 2
+top_part = 0, top = 7
+popped 48348 time 3
+top_part = 0, top = 6
+popped 48348 time 4
+top_part = 0, top = 5
+popped 48348 time 5
+top_part = 0, top = 4
+popped 48348 time 6
+top_part = 0, top = 3
+popped 48333 time 7
+top_part = 0, top = 2
+popped 48337 time 8
+top_part = 0, top = 1
+popped 48337 time 9
+n_process = before detach 2 pid = 48348
+n_process = before attach 2 pid = 48334
+top_part = 0, top = 20
+popped 48346 time 0
+top_part = 0, top = 19
+popped 48334 time 1
+top_part = 0, top = 17
+popped 48334 time 2
+top_part = 0, top = 15
+popped 48334 time 3
+top_part = 0, top = 13
+popped 48334 time 4
+top_part = 0, top = 11
+popped 48346 time 5
+top_part = 0, top = 9
+popped 48346 time 6
+top_part = 0, top = 8
+popped 48334 time 7
+top_part = 0, top = 6
+popped 48334 time 8
+top_part = 0, top = 5
+popped 48349 time 9
+n_process = before detach 4 pid = 48334
+n_process = before attach 2 pid = 48346
+top_part = 0, top = 20
+popped 48346 time 0
+top_part = 0, top = 19
+popped 48346 time 1
+top_part = 0, top = 17
+popped 48346 time 2
+top_part = 0, top = 15
+popped 48346 time 3
+top_part = 0, top = 13
+popped 48346 time 4
+top_part = 0, top = 11
+popped 48334 time 5
+top_part = 0, top = 9
+popped 48334 time 6
+top_part = 0, top = 8
+popped 48346 time 7
+top_part = 0, top = 6
+popped 48346 time 8
+top_part = 0, top = 5
+popped 48349 time 9
+n_process = before detach 4 pid = 48346
+n_process = before attach 3 pid = 48349
+top_part = 0, top = 10
+popped 48349 time 0
+top_part = 0, top = 9
+popped 48349 time 1
+top_part = 0, top = 8
+popped 48349 time 2
+top_part = 0, top = 7
+popped 48349 time 3
+top_part = 0, top = 6
+popped 48349 time 4
+top_part = 0, top = 5
+popped 48349 time 5
+top_part = 0, top = 4
+popped 48346 time 6
+top_part = 0, top = 3
+popped 48334 time 7
+top_part = 0, top = 2
+popped 48346 time 8
+top_part = 0, top = 1
+popped 48334 time 9
+n_process = before detach 3 pid = 48349
+n_process = before attach 2 pid = 48347
+top_part = 0, top = 10
+popped 48347 time 0
+top_part = 0, top = 9
+popped 48347 time 1
+top_part = 0, top = 8
+popped 48347 time 2
+top_part = 0, top = 7
+popped 48347 time 3
+top_part = 0, top = 6
+popped 48347 time 4
+top_part = 0, top = 5
+popped 48347 time 5
+top_part = 0, top = 4
+popped 48347 time 6
+top_part = 0, top = 3
+popped 48347 time 7
+top_part = 0, top = 2
+popped 48347 time 8
+top_part = 0, top = 1
+popped 48347 time 9
+n_process = before detach 3 pid = 48347
+n_process = before attach 3 pid = 48353
+top_part = 0, top = 15
+popped 48353 time 0
+top_part = 0, top = 14
+popped 48353 time 1
+top_part = 0, top = 13
+popped 48353 time 2
+top_part = 0, top = 12
+popped 48353 time 3
+top_part = 0, top = 11
+popped 48353 time 4
+top_part = 0, top = 10
+popped 48353 time 5
+top_part = 0, top = 9
+popped 48353 time 6
+top_part = 0, top = 8
+popped 48353 time 7
+top_part = 0, top = 7
+popped 48353 time 8
+top_part = 0, top = 6
+popped 48353 time 9
+n_process = before detach 5 pid = 48353
+n_process = before attach 4 pid = 48343
+top_part = 0, top = 15
+popped 48343 time 0
+top_part = 0, top = 14
+popped 48343 time 1
+top_part = 0, top = 13
+popped 48343 time 2
+top_part = 0, top = 13
+popped 48343 time 3
+top_part = 0, top = 12
+popped 48343 time 4
+top_part = 0, top = 11
+popped 48343 time 5
+top_part = 0, top = 11
+popped 48355 time 6
+top_part = 0, top = 12
+popped 48355 time 7
+top_part = 0, top = 12
+popped 48355 time 8
+top_part = 0, top = 12
+popped 48355 time 9
+n_process = before detach 6 pid = 48343
+n_process = before attach 4 pid = 48355
+top_part = 0, top = 15
+popped 48355 time 0
+top_part = 0, top = 14
+popped 48355 time 1
+top_part = 0, top = 13
+popped 48355 time 2
+top_part = 0, top = 12
+popped 48355 time 3
+top_part = 0, top = 11
+popped 48355 time 4
+top_part = 0, top = 10
+popped 48343 time 5
+top_part = 0, top = 9
+popped 48343 time 6
+top_part = 0, top = 8
+popped 48343 time 7
+top_part = 0, top = 7
+popped 48343 time 8
+top_part = 0, top = 6
+popped 48343 time 9
+n_process = before detach 5 pid = 48355
+n_process = before attach 5 pid = 48341
+top_part = 0, top = 15
+popped 48341 time 0
+top_part = 0, top = 16
+popped 48346 time 1
+top_part = 0, top = 17
+popped 48342 time 2
+top_part = 0, top = 19
+popped 48345 time 3
+top_part = 0, top = 21
+popped 48345 time 4
+top_part = 0, top = 23
+popped 48345 time 5
+top_part = 0, top = 25
+popped 48342 time 6
+top_part = 0, top = 27
+popped 48342 time 7
+top_part = 0, top = 29
+popped 48342 time 8
+top_part = 0, top = 31
+popped 48342 time 9
+n_process = before detach 8 pid = 48341
+n_process = before attach 4 pid = 48345
+top_part = 0, top = 35
+popped 48345 time 0
+top_part = 0, top = 34
+popped 48344 time 1
+top_part = 0, top = 33
+popped 48342 time 2
+top_part = 0, top = 33
+popped 48350 time 3
+top_part = 0, top = 33
+popped 48350 time 4
+top_part = 0, top = 33
+popped 48344 time 5
+top_part = 0, top = 33
+popped 48350 time 6
+top_part = 0, top = 31
+popped 48340 time 7
+top_part = 0, top = 30
+popped 48345 time 8
+top_part = 0, top = 29
+popped 48344 time 9
+n_process = before detach 8 pid = 48345
+n_process = before attach 4 pid = 48344
+top_part = 0, top = 34
+popped 48350 time 0
+top_part = 0, top = 32
+popped 48340 time 1
+top_part = 0, top = 31
+popped 48344 time 2
+top_part = 0, top = 29
+popped 48344 time 3
+top_part = 0, top = 28
+popped 48340 time 4
+top_part = 0, top = 28
+popped 48340 time 5
+top_part = 0, top = 27
+popped 48340 time 6
+top_part = 0, top = 27
+popped 48340 time 7
+top_part = 0, top = 23
+popped 48344 time 8
+top_part = 0, top = 20
+popped 48342 time 9
+n_process = before detach 7 pid = 48344
+n_process = before attach 2 pid = 48350
+top_part = 0, top = 32
+popped 48345 time 0
+top_part = 0, top = 30
+popped 48340 time 1
+top_part = 0, top = 30
+popped 48340 time 2
+top_part = 0, top = 28
+popped 48345 time 3
+top_part = 0, top = 27
+popped 48344 time 4
+top_part = 0, top = 27
+popped 48340 time 5
+top_part = 0, top = 27
+popped 48340 time 6
+top_part = 0, top = 24
+popped 48345 time 7
+top_part = 0, top = 21
+popped 48342 time 8
+top_part = 0, top = 18
+popped 48342 time 9
+n_process = before detach 6 pid = 48350
+n_process = before attach 8 pid = 48340
+top_part = 0, top = 25
+popped 48344 time 0
+top_part = 0, top = 22
+popped 48344 time 1
+top_part = 0, top = 20
+popped 48344 time 2
+top_part = 0, top = 17
+popped 48344 time 3
+top_part = 0, top = 16
+popped 48345 time 4
+top_part = 0, top = 15
+popped 48342 time 5
+top_part = 0, top = 14
+popped 48341 time 6
+top_part = 0, top = 13
+popped 48341 time 7
+top_part = 0, top = 12
+popped 48341 time 8
+top_part = 0, top = 11
+popped 48341 time 9
+n_process = before detach 5 pid = 48340
+n_process = before attach 4 pid = 48359
+top_part = 0, top = 27
+popped 48351 time 0
+top_part = 0, top = 27
+popped 48351 time 1
+top_part = 0, top = 27
+popped 48351 time 2
+top_part = 0, top = 27
+popped 48351 time 3
+top_part = 0, top = 26
+popped 48359 time 4
+top_part = 0, top = 24
+popped 48351 time 5
+top_part = 0, top = 23
+popped 48359 time 6
+top_part = 0, top = 21
+popped 48359 time 7
+top_part = 0, top = 20
+popped 48351 time 8
+top_part = 0, top = 18
+popped 48359 time 9
+n_process = before detach 5 pid = 48359
+n_process = before attach 3 pid = 48351
+top_part = 0, top = 26
+popped 48359 time 0
+top_part = 0, top = 22
+popped 48351 time 1
+top_part = 0, top = 20
+popped 48359 time 2
+top_part = 0, top = 17
+popped 48359 time 3
+top_part = 0, top = 16
+popped 48351 time 4
+top_part = 0, top = 15
+popped 48359 time 5
+top_part = 0, top = 14
+popped 48359 time 6
+top_part = 0, top = 13
+popped 48351 time 7
+top_part = 0, top = 12
+popped 48359 time 8
+top_part = 0, top = 11
+popped 48351 time 9
+n_process = before detach 4 pid = 48351
+n_process = before attach 4 pid = 48342
+top_part = 0, top = 10
+popped 48341 time 0
+top_part = 0, top = 9
+popped 48341 time 1
+top_part = 0, top = 8
+popped 48341 time 2
+top_part = 0, top = 7
+popped 48341 time 3
+top_part = 0, top = 6
+popped 48341 time 4
+top_part = 0, top = 5
+popped 48350 time 5
+top_part = 0, top = 4
+popped 48350 time 6
+top_part = 0, top = 3
+popped 48350 time 7
+top_part = 0, top = 2
+popped 48350 time 8
+top_part = 0, top = 1
+popped 48350 time 9
+n_process = before detach 3 pid = 48342
+n_process = before attach 2 pid = 48357
+top_part = 0, top = 12
+popped 48362 time 0
+top_part = 0, top = 12
+popped 48362 time 1
+top_part = 0, top = 12
+popped 48362 time 2
+top_part = 0, top = 11
+popped 48357 time 3
+top_part = 0, top = 11
+popped 48362 time 4
+top_part = 0, top = 11
+popped 48362 time 5
+top_part = 0, top = 10
+popped 48362 time 6
+top_part = 0, top = 9
+popped 48357 time 7
+top_part = 0, top = 10
+popped 48362 time 8
+top_part = 0, top = 8
+popped 48357 time 9
+n_process = before detach 6 pid = 48357
+n_process = before attach 3 pid = 48362
+top_part = 0, top = 12
+popped 48362 time 0
+top_part = 0, top = 11
+popped 48362 time 1
+top_part = 0, top = 9
+popped 48362 time 2
+top_part = 0, top = 7
+popped 48357 time 3
+top_part = 0, top = 6
+popped 48357 time 4
+top_part = 0, top = 5
+popped 48357 time 5
+top_part = 0, top = 6
+popped 48361 time 6
+top_part = 0, top = 7
+popped 48361 time 7
+top_part = 0, top = 7
+popped 48361 time 8
+top_part = 0, top = 7
+popped 48361 time 9
+n_process = before detach 5 pid = 48362
+n_process = before attach 4 pid = 48361
+top_part = 0, top = 10
+popped 48361 time 0
+top_part = 0, top = 9
+popped 48361 time 1
+top_part = 0, top = 8
+popped 48361 time 2
+top_part = 0, top = 7
+popped 48361 time 3
+top_part = 0, top = 6
+popped 48361 time 4
+top_part = 0, top = 5
+popped 48361 time 5
+top_part = 0, top = 4
+popped 48357 time 6
+top_part = 0, top = 3
+popped 48357 time 7
+top_part = 0, top = 2
+popped 48357 time 8
+top_part = 0, top = 1
+popped 48357 time 9
+n_process = before detach 4 pid = 48361
+n_process = before attach 3 pid = 48360
+top_part = 0, top = 10
+popped 48360 time 0
+top_part = 0, top = 9
+popped 48360 time 1
+top_part = 0, top = 8
+popped 48360 time 2
+top_part = 0, top = 7
+popped 48360 time 3
+top_part = 0, top = 6
+popped 48360 time 4
+top_part = 0, top = 5
+popped 48360 time 5
+top_part = 0, top = 4
+popped 48360 time 6
+top_part = 0, top = 3
+popped 48360 time 7
+top_part = 0, top = 2
+popped 48360 time 8
+top_part = 0, top = 1
+popped 48360 time 9
+n_process = before detach 4 pid = 48360
+n_process = before attach 3 pid = 48358
+top_part = 0, top = 10
+popped 48358 time 0
+top_part = 0, top = 9
+popped 48358 time 1
+top_part = 0, top = 8
+popped 48358 time 2
+top_part = 0, top = 7
+popped 48358 time 3
+top_part = 0, top = 6
+popped 48358 time 4
+top_part = 0, top = 5
+popped 48358 time 5
+top_part = 0, top = 4
+popped 48358 time 6
+top_part = 0, top = 3
+popped 48358 time 7
+top_part = 0, top = 3
+popped 48358 time 8
+top_part = 0, top = 2
+popped 48358 time 9
+n_process = before detach 5 pid = 48358
+n_process = before attach 4 pid = 48354
+top_part = 0, top = 10
+popped 48354 time 0
+top_part = 0, top = 9
+popped 48354 time 1
+top_part = 0, top = 8
+popped 48354 time 2
+top_part = 0, top = 9
+popped 48364 time 3
+top_part = 0, top = 8
+popped 48363 time 4
+top_part = 0, top = 11
+popped 48363 time 5
+top_part = 0, top = 11
+popped 48363 time 6
+top_part = 0, top = 12
+popped 48364 time 7
+top_part = 0, top = 13
+popped 48364 time 8
+top_part = 0, top = 15
+popped 48363 time 9
+n_process = before detach 6 pid = 48354
+n_process = before attach 4 pid = 48363
+top_part = 0, top = 20
+popped 48356 time 0
+top_part = 0, top = 20
+popped 48364 time 1
+top_part = 0, top = 20
+popped 48356 time 2
+top_part = 0, top = 21
+popped 48356 time 3
+top_part = 0, top = 20
+popped 48356 time 4
+top_part = 0, top = 19
+popped 48364 time 5
+top_part = 0, top = 18
+popped 48356 time 6
+top_part = 0, top = 18
+popped 48356 time 7
+top_part = 0, top = 17
+popped 48356 time 8
+top_part = 0, top = 15
+popped 48363 time 9
+n_process = before detach 5 pid = 48363
+n_process = before attach 4 pid = 48364
+top_part = 0, top = 21
+popped 48364 time 0
+top_part = 0, top = 20
+popped 48356 time 1
+top_part = 0, top = 19
+popped 48356 time 2
+top_part = 0, top = 18
+popped 48356 time 3
+top_part = 0, top = 18
+popped 48363 time 4
+top_part = 0, top = 17
+popped 48364 time 5
+top_part = 0, top = 13
+popped 48363 time 6
+top_part = 0, top = 11
+popped 48363 time 7
+top_part = 0, top = 9
+popped 48363 time 8
+top_part = 0, top = 7
+popped 48354 time 9
+n_process = before detach 4 pid = 48364
+n_process = before attach 5 pid = 48356
+top_part = 0, top = 15
+popped 48364 time 0
+top_part = 0, top = 12
+popped 48363 time 1
+top_part = 0, top = 10
+popped 48364 time 2
+top_part = 0, top = 8
+popped 48363 time 3
+top_part = 0, top = 6
+popped 48354 time 4
+top_part = 0, top = 5
+popped 48354 time 5
+top_part = 0, top = 4
+popped 48354 time 6
+top_part = 0, top = 3
+popped 48354 time 7
+top_part = 0, top = 2
+popped 48354 time 8
+top_part = 0, top = 1
+popped 48358 time 9
+n_process = before detach 3 pid = 48356
+Creating
+n_process = before attach 0 pid = 48333
+top_part = 0, top = 24
+popped 48335 time 0
+top_part = 0, top = 24
+popped 48335 time 1
+top_part = 0, top = 22
+popped 48333 time 2
+top_part = 0, top = 21
+popped 48337 time 3
+top_part = 0, top = 18
+popped 48337 time 4
+top_part = 0, top = 17
+popped 48339 time 5
+top_part = 0, top = 17
+popped 48339 time 6
+top_part = 0, top = 16
+popped 48339 time 7
+top_part = 0, top = 21
+popped 48336 time 8
+top_part = 0, top = 23
+popped 48336 time 9
+curr_size = 0
+n_process = before detach 2 pid = 48333
+in mark, n_proccess = 1

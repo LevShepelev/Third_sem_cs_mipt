@@ -15,6 +15,6 @@
 
 int main()
     {
-    int shmid = shmget(10, 10, IPC_CREAT | 0666);
-    char* shmmem = shmat(shmid,ULL, 0)
+    int a[10];
+    printf("%d\n", sizeof(a));
     }

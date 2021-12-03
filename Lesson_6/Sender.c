@@ -36,12 +36,6 @@ int main(int argc, char** argv)
     if (size == -1)
       printf("read_problem\n");
     
-    int shmid_1 = shmget(10, 2 * sizeof(int), IPC_CREAT | 0666);
-    int* shm_buf = (int*) shmat(shmid_1, NULL, 0);
-    shm_buf[0] = getpid();
-    shm_buf[1] = statistica.st_size;
-    shmdt(shm_buf);
-    
     struct sigaction act_alarm;
     memset(&act_alarm, 0, sizeof(act_alarm));
     act_alarm.sa_handler = parentexit;
@@ -88,7 +82,7 @@ int main(int argc, char** argv)
       }
     j++; 
     }
-    kill(pid, SIGUSR1);
+    kill(pid, SIGCHLD);
     end = clock();
     printf("time = %f, size = %ld speed = %f B/s\n", (double) (end - start) / (CLOCKS_PER_SEC), statistica.st_size, (double) statistica.st_size / ((double)(end - start) / (CLOCKS_PER_SEC)));
     free(buf);

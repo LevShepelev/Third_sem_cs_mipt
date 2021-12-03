@@ -19,8 +19,13 @@ int main()
     {
     Stack_t* stack = attach_stack(10, 5);
     int a = 0;
-    push(stack, (void*) &a);
+    for (int i = 0; i < 10; i++)
+        {
+        pop(stack, &a);
+        printf("%d  ", a);
+        }
+        
     stack_dump(stack);
-    sleep(30);
+    sleep(15);
     detach_stack(stack);
     }

@@ -1,0 +1,1 @@
+/home/lev/Third_sem_cs_mipt/Daemon/Destination/copydaemon.log

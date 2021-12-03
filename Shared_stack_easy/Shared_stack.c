@@ -91,7 +91,6 @@ int pop(Stack_t* stack, data_t* val)
         }
     else
         printf("Stack is empty\n");
-        
     //printf("top_part = %d, top_shmatted_part = %d, top = %d\n", stack -> info -> top_part, stack -> top_shmatted_part, stack -> info -> parts[stack -> info -> top_part].top);
     //printf("unlock_pop, pid = %d\n", getpid());
     //usleep(1);
@@ -120,7 +119,7 @@ int detach_stack(Stack_t* stack)
     //printf("unlock_det\n");
     if (stack -> info -> n_processes < 0)
         {
-        printf("Stack already was destucted\n");
+        //printf("Stack already was destucted\n");
         return -1;
         }
     for (int i = 0; i < Max_proccess; i++)
@@ -136,20 +135,20 @@ int detach_stack(Stack_t* stack)
 
 int mark_destruct(Stack_t* stack)
     {
-    printf("destructor\n");
+    //printf("destructor\n");
     assert(stack != NULL);
     stack -> info = (Stack_info_t*) shmat(stack -> info_shmid, NULL, 0);
     sem_check(stack);
     while (stack -> info -> n_processes > 0)
         {
-        printf("\nIn mark, n_proccess = %d, sem = %d\n", stack -> info -> n_processes, semctl(stack -> info -> sem_id, 0, GETVAL));
+       // printf("\nIn mark, n_proccess = %d, sem = %d\n", stack -> info -> n_processes, semctl(stack -> info -> sem_id, 0, GETVAL));
         Check_proccesses(stack);
-        sleep(1);
+        usleep(1);
         }
     
     if (stack -> info == (void*) -1) //man return value shmat
         {
-        printf("stack alreadd was destucted in mark_destruct\n");
+        //printf("stack alreadd was destucted in mark_destruct\n");
         free(stack);
         return 0;
         }
@@ -186,8 +185,9 @@ void Check_proccesses(Stack_t* stack)
             if (kill(stack -> info -> pids[i], 0) == 0)
                 {
                 stack -> info -> n_processes--;
-                printf("Proccess with pid = %d, was killed without detaching from stack\n", stack -> info -> pids[i]);
+                //printf("Proccess with pid = %d, was killed without detaching from stack\n", stack -> info -> pids[i]);
                 stack -> info -> pids[i] = 0;
+                semop(stack -> info -> sem_id, &sem_unlock, 1);
                 }
         }
     semop(stack -> info -> sem_id, &sem_unlock, 1);

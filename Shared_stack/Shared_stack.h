@@ -14,28 +14,37 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <sys/sem.h>
+#include <errno.h>
 
-const int Max_number_of_parts = 100;
+#define Max_number_of_parts 100
+
+typedef int data_t;
 
 typedef struct stack_elem_t 
     {
-    void** array;
     int size;
     int top;
     int shmid;
     } St_elem_t;
 
-
-typedef struct stack_t 
+typedef struct stach_info_t
     {
     St_elem_t parts[Max_number_of_parts];
-    int stack_shmid;
-    int parts_shmid;
     int parts_max_size;
     int top_part;
     int sem_id;
     int n_processes;
+    } Stack_info_t;
+
+typedef struct stack_t 
+    {
+    Stack_info_t* info;
+    data_t* ptr_table[Max_number_of_parts];
+    int info_shmid;
+    int top_shmatted_part;
     } Stack_t;
+
+
 
 /* Attach (create if needed) shared memory stack to the process.
 Returns Stack_t* in case of success. Returns NULL on failure. */
@@ -55,9 +64,13 @@ int get_size(Stack_t* stack);
 int get_count(Stack_t* stack);
 
 /* Push val into stack. */
-int push(Stack_t* stack, void* val);
+int push(Stack_t* stack, data_t);
 
 /* Pop val from stack into memory */
-int pop(Stack_t* stack, void** val);
+int pop(Stack_t* stack, data_t*);
 
-int stack_dump(Stack_t* stack);
+/* Print information about stack */
+void stack_dump(Stack_t* stack);
+
+/* The function shmats new parts, that was added by another proccesses */
+void Syncronising_new_parts(Stack_t* stack);
