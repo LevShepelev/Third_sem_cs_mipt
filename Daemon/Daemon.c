@@ -16,7 +16,7 @@
 #include <limits.h>
 #include <sys/inotify.h>
 
-#define DEBUG
+//#define DEBUG
 
 void logprint (const char* mestype, const char* mes, const char* param);
 int dirnamecopy (char* dist, const char* source);
@@ -85,7 +85,7 @@ int dir_routine(const char* dest_local, const char* source_local)
     for (; source_local[i] == source[i] && i < strlen(source); i++)
         ;
     strncpy(inotify_array[inotify_top].name, source_local + i * sizeof(char), strlen(source_local) - strlen(source));
-    printf("watch was, watch_id = %d set name = %s\n", inotify_array[inotify_top].watch_id , inotify_array[inotify_top].name);
+    //printf("watch was, watch_id = %d set name = %s\n", inotify_array[inotify_top].watch_id , inotify_array[inotify_top].name);
     dird = opendir(dest_local);
     if (!dird)
         {
@@ -209,7 +209,7 @@ int main(int argc, char** argv)
     fclose (stderr);
     #endif
     working(argv[1], argv[2]);
-    printf("success_end\n");
+    //printf("success_end\n");
 	return 0;
     }
 
@@ -276,7 +276,7 @@ void finishing()
     free(inotify_array);
     close(inotify_fd);
     fclose(file_out);
-    printf("finished\n");
+    //printf("finished\n");
     exit_flag = 0;
     }
 
@@ -329,7 +329,7 @@ void checking_paths()
     {
     if (strncmp(source, dest, strlen(source) + 1) == 0)
         {
-        printf("ERROR: archieve inside archiviening directory\n");
+        logprint("ERROR", "archieve inside archiviening directory\n", NULL);
         exit(EXIT_FAILURE); 
         }
     }
@@ -393,7 +393,7 @@ void watching()
             {
             event = (const struct inotify_event *) ptr;
             //printf("get_path = %s,  source = %s, name = %s\n", get_path(event -> wd), source, event -> name);
-            printf("get_path = %s\n", get_path(event -> wd));
+            //printf("get_path = %s\n", get_path(event -> wd));
             strcat(strcpy(paths, source), get_path(event -> wd));
             strcat(strcpy(pathd, dest), get_path(event -> wd));
             //printf("event -> wd = %d, event -> name = %s\n", event -> wd, event -> name);
@@ -429,14 +429,14 @@ void watching()
                 {
                 strcpy(tmp_file_name, pathd);
                 strcat(strcat(tmp_file_name, "/"), event -> name);
-                printf("delete %s\n", tmp_file_name);
+                //printf("delete %s\n", tmp_file_name);
                 if (!stat(tmp_file_name, &sinfo))
                     {
                     if (S_ISREG(sinfo.st_mode) || S_ISLNK(sinfo.st_mode) || S_ISFIFO(sinfo.st_mode))
                         {
                         remove(tmp_file_name);
                         logprint ("INFO", "Delete file", tmp_file_name);
-                        printf("IN_DELETE\n");
+                        //printf("IN_DELETE\n");
                         }
                     if (S_ISDIR(sinfo.st_mode))
                         {
@@ -444,7 +444,6 @@ void watching()
                         logprint ("INFO", "Delete directory", pathd);
                         }
                     }
-                printf("IN_DELETE\n");
                 }
 
             else if (event -> mask & IN_MODIFY)
@@ -472,14 +471,12 @@ char* get_path(int watch_id)
     {
     for (int i = 0; i <= inotify_top; i++)
         {
-        printf("watch_id = %d, name = %s\n", inotify_array[i].watch_id, inotify_array[i].name);
+        //printf("watch_id = %d, name = %s\n", inotify_array[i].watch_id, inotify_array[i].name);
         if (inotify_array[i].watch_id == watch_id)
-            {
-            printf("yes\n");
             return inotify_array[i].name;
-            }
+            
         }
-    printf("path hasnt found\n");
+    logprint("ERROR", "path hasnt found", NULL);
     return "";
     }
 
@@ -490,17 +487,17 @@ void mode_changing()
     }
 
 void My_copy(char* loc_source, char* loc_dest)
-{
-int in, out;
-int  n;
-char buf [512];
-in = open(loc_source, O_RDONLY);
-out = open(loc_dest, O_CREAT | O_TRUNC | O_WRONLY, 0777);
-while ((n = read(in, buf, sizeof buf)) > 0)
-  {
-    if (write(out, buf, n) == -1 )
-        printf("problem_with_writing to file in copying\n");
-  }
-close(in);
-close(out);
-}
+    {
+    int in, out;
+    int  n;
+    char buf [512];
+    in = open(loc_source, O_RDONLY);
+    out = open(loc_dest, O_CREAT | O_TRUNC | O_WRONLY, 0777);
+    while ((n = read(in, buf, sizeof buf)) > 0)
+        {
+        if (write(out, buf, n) == -1)
+            logprint("ERROR", "problem_with_writing to file in copying", NULL);
+        }
+    close(in);
+    close(out);
+    }
